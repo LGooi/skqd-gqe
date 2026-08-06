@@ -1,0 +1,7 @@
+krylov_dim: 2
+dt: 0.1
+trotter_steps: 2
+shots_per_krylov_state: 1000
+max_dim: 2000
+max_cycle: 100
+eigsh_kwargs: {tol: 1e-6, maxiter: 1000}

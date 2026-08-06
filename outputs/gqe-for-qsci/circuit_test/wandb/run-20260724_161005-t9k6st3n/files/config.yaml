@@ -1,0 +1,187 @@
+_wandb:
+    value:
+        cli_version: 0.28.0
+        e:
+            43buskddl1qczn6z1vwizzr8a65ntelq:
+                args:
+                    - exp_tag=circuit_test
+                    - subspace_method=skqd
+                codePath: train.py
+                codePathLocal: train.py
+                cpu_count: 36
+                cpu_count_logical: 36
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "107374182400"
+                        used: "9287421952"
+                email: leongzl0269@gmail.com
+                executable: /home/leo07010/miniconda3/envs/gqe-env/bin/python
+                git:
+                    commit: 0a201eafb94a85dc49b9dbfe33338087efe1e969
+                    remote: https://github.com/moken20/gqe-for-qsci.git
+                gpu: Tesla V100-SXM2-32GB
+                gpu_count: 2
+                gpu_nvidia:
+                    - architecture: Volta
+                      cudaCores: 5120
+                      memoryTotal: "34359738368"
+                      name: Tesla V100-SXM2-32GB
+                      uuid: GPU-73f36790-78f4-df2b-c973-57a4edfbf773
+                    - architecture: Volta
+                      cudaCores: 5120
+                      memoryTotal: "34359738368"
+                      name: Tesla V100-SXM2-32GB
+                      uuid: GPU-a3291a4a-4674-9c44-27a1-e6a9dd65b32f
+                host: cjna7nctr1779779307790-74jts
+                memory:
+                    total: "809928179712"
+                os: Linux-4.18.0-305.131.1.el8_4.x86_64-x86_64-with-glibc2.35
+                program: /home/leo07010/Leon/gqe-for-qsci/train.py
+                python: CPython 3.10.20
+                root: outputs/gqe-for-qsci/circuit_test
+                startedAt: "2026-07-24T08:10:05.866499Z"
+                writerId: 43buskddl1qczn6z1vwizzr8a65ntelq
+        m:
+            - "1": trainer/global_step
+              "6":
+                - 3
+              "7": []
+            - "1": epoch
+              "6":
+                - 3
+              "7": []
+            - "2": '*'
+              "5": 2
+              "6":
+                - 1
+              "7": []
+        python_version: 3.10.20
+        t:
+            "1":
+                - 1
+                - 5
+                - 9
+                - 11
+                - 41
+                - 49
+                - 50
+                - 53
+                - 103
+            "2":
+                - 1
+                - 5
+                - 9
+                - 11
+                - 41
+                - 49
+                - 50
+                - 53
+                - 103
+            "3":
+                - 7
+                - 13
+                - 16
+                - 66
+            "4": 3.10.20
+            "5": 0.28.0
+            "6": 4.57.3
+            "8":
+                - 2
+            "12": 0.28.0
+            "13": linux-x86_64
+exp_tag:
+    value: circuit_test
+model:
+    value:
+        _target_: gqe_qsci.gqe.models.gpt2.GPT2Model
+        repetition_penalty: 1.2
+        small: true
+molecule:
+    value:
+        _target_: gqe_qsci.molecule.PySCFMolecule
+        basis: sto-3g
+        charge: 0
+        geometry:
+            atoms:
+                - "N"
+                - "N"
+            bond_length: 2.5
+            type: linear_chain
+        nelecas: 10
+        norbcas: 8
+        spin: 0
+ngates:
+    value: 10
+operator_pool:
+    value:
+        ccsd_threshold: 1e-06
+        only_use_first_pauli: true
+        params: null
+        remove_z_ladder: true
+        spec: pauli_evolution
+output:
+    value: outputs/gqe-for-qsci/circuit_test
+project:
+    value:
+        name: gqe-for-qsci
+qsci:
+    value:
+        eigsh_kwargs:
+            maxiter: 1000
+            tol: 1e-06
+        enlarge_method: symmetry_completion
+        max_cycle: 100
+        max_dim: 1000
+reference_keys:
+    value:
+        - R-CASCI
+        - R-CCSD
+sampler:
+    value:
+        mpi: false
+        shots: 20000
+skqd:
+    value:
+        dt: 0.1
+        eigsh_kwargs:
+            maxiter: 1000
+            tol: 1e-06
+        krylov_dim: 2
+        max_cycle: 100
+        max_dim: 2000
+        shots_per_krylov_state: 1000
+        trotter_steps: 2
+subspace_method:
+    value: skqd
+trainer:
+    value:
+        batch_size: 10
+        buffer_size: 10
+        checkpoint_every_n_iters: 10
+        load_checkpoint: true
+        loss:
+            clip_grpo_high: 0.28
+            clip_grpo_low: 0.2
+            type: grpo
+        max_iters: 100
+        num_samples: 10
+        optimizer:
+            cls: AdamW
+            lr: 5e-06
+            weight_decay: 0.01
+        seed: 32
+        step_per_epoch: 15
+        temperature_scheduler:
+            _target_: gqe_qsci.gqe.scheduler.VarBasedScheduler
+            delta: 0.02
+            initial: 0.5
+            target_var: 1e-05
+        warmup_size: 10
+vocab_size:
+    value: 0
+wandb:
+    value:
+        dir: outputs/gqe-for-qsci/circuit_test
+        name: circuit_test
+        project: gqe-for-qsci

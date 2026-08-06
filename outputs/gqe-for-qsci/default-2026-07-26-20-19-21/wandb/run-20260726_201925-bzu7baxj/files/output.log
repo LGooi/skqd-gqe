@@ -1,0 +1,27 @@
+converged SCF energy = -106.616959082769
+Vocab size: 174
+CASCI Energy: -107.44040895913143
+CCSD Energy: -107.17569585189183
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Checkpoint outputs/gqe-for-qsci/default-2026-07-26-20-19-21/models/last.ckpt does not exist. Training from scratch.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+/home/leo07010/miniconda3/envs/gqe-env/lib/python3.10/site-packages/pytorch_lightning/utilities/model_summary/model_summary.py:242: Precision 16-mixed is not supported by the model summary.  Estimated model size in MB will not be accurate. Using 32 bits instead.
+┏━━━┳━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┳━━━━━━━┓
+┃[1;35m [0m[1;35m [0m[1;35m [0m┃[1;35m [0m[1;35mName [0m[1;35m [0m┃[1;35m [0m[1;35mType     [0m[1;35m [0m┃[1;35m [0m[1;35mParams[0m[1;35m [0m┃[1;35m [0m[1;35mMode [0m[1;35m [0m┃[1;35m [0m[1;35mFLOPs[0m[1;35m [0m┃
+┡━━━╇━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━╇━━━━━━━┩
+│[2m [0m[2m0[0m[2m [0m│ model │ GPT2Model │ 42.7 M │ train │     0 │
+└───┴───────┴───────────┴────────┴───────┴───────┘
+[1mTrainable params[0m: 42.7 M
+[1mNon-trainable params[0m: 0
+[1mTotal params[0m: 42.7 M
+[1mTotal estimated model params size (MB)[0m: 170
+[1mModules in train mode[0m: 86
+[1mModules in eval mode[0m: 0
+[1mTotal FLOPs[0m: 0
+Error executing job with overrides: []
+RuntimeError: architecture mismatch
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

@@ -1,0 +1,86 @@
+{
+  "R": 0.7474,
+  "L": 4,
+  "max_dim": 20,
+  "shots": 5000,
+  "n_iters": 2,
+  "num_samples": 4,
+  "seeds": [
+    43
+  ],
+  "casci_energy": -1.1371757102406854,
+  "trajectories": {
+    "gqe": [
+      [
+        {
+          "iter": 0,
+          "energy": -1.1371757102406854,
+          "ndet": 2,
+          "local_energy": -1.1371757102406854,
+          "local_ndet": 2,
+          "global_energy": -1.1371757102406854,
+          "global_ndet": 2
+        },
+        {
+          "iter": 1,
+          "energy": -1.1371757102406854,
+          "ndet": 2,
+          "local_energy": -1.1371757102406854,
+          "local_ndet": 2,
+          "global_energy": -1.1371757102406854,
+          "global_ndet": 2
+        }
+      ]
+    ],
+    "random": [
+      [
+        {
+          "iter": 0,
+          "energy": -1.1371757102406854,
+          "ndet": 2,
+          "local_energy": -1.1371757102406854,
+          "local_ndet": 2,
+          "global_energy": null,
+          "global_ndet": null
+        },
+        {
+          "iter": 1,
+          "energy": -1.1371757102406854,
+          "ndet": 2,
+          "local_energy": -1.1371757102406854,
+          "local_ndet": 2,
+          "global_energy": -1.1371757102406854,
+          "global_ndet": 2
+        }
+      ]
+    ],
+    "gqe_skqd": [
+      [
+        {
+          "iter": 0,
+          "energy": -1.1371757102406854,
+          "ndet": 2,
+          "local_energy": -1.1371757102406854,
+          "local_ndet": 2,
+          "global_energy": -1.1371757102406854,
+          "global_ndet": 2
+        },
+        {
+          "iter": 1,
+          "energy": -1.1371757102406854,
+          "ndet": 2,
+          "local_energy": -1.1371757102406854,
+          "local_ndet": 2,
+          "global_energy": -1.1371757102406854,
+          "global_ndet": 2
+        }
+      ]
+    ]
+  },
+  "skqd_settings": {
+    "krylov_dim": 2,
+    "dt": 0.1,
+    "trotter_steps": 2,
+    "shots_per_krylov_state": 300
+  }
+}

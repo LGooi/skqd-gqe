@@ -1,0 +1,130 @@
+{
+  "R": 1.1,
+  "casci_energy": -107.65382718840446,
+  "lucj3_sampling": [
+    {
+      "x": 1000,
+      "energy": -107.55785966703132,
+      "subspace_dim": 11,
+      "n_sampled": 6,
+      "n_valid": 6,
+      "extra": {}
+    }
+  ],
+  "sqdrift_sampling": [
+    {
+      "x": 1000,
+      "energy": -107.59074084364013,
+      "subspace_dim": 256,
+      "n_sampled": 438,
+      "n_valid": 115,
+      "extra": {
+        "per_realization_shots": 166,
+        "n_realizations": 6
+      }
+    }
+  ],
+  "exact_sampling": [
+    {
+      "x": 1000,
+      "energy": -107.63610520380485,
+      "subspace_dim": 72,
+      "n_sampled": 35,
+      "n_valid": 35,
+      "extra": {}
+    }
+  ],
+  "lucj_gate_efficiency": [
+    {
+      "x": 264,
+      "energy": -107.57141682612698,
+      "subspace_dim": 20,
+      "n_sampled": 12,
+      "n_valid": 12,
+      "extra": {
+        "layers": 1,
+        "depth": 199,
+        "two_qubit_depth": 52,
+        "total_gates": 1704,
+        "rotation_gates": 1210
+      }
+    },
+    {
+      "x": 484,
+      "energy": -107.60921847329412,
+      "subspace_dim": 51,
+      "n_sampled": 20,
+      "n_valid": 20,
+      "extra": {
+        "layers": 2,
+        "depth": 339,
+        "two_qubit_depth": 90,
+        "total_gates": 3078,
+        "rotation_gates": 2188
+      }
+    }
+  ],
+  "sqdrift_gate_efficiency": [
+    {
+      "x": 76,
+      "energy": -107.55548841400773,
+      "subspace_dim": 83,
+      "n_sampled": 51,
+      "n_valid": 13,
+      "extra": {
+        "N": 25,
+        "depth": 80,
+        "two_qubit_depth": 55,
+        "total_gates": 187,
+        "rotation_gates": 25
+      }
+    },
+    {
+      "x": 294,
+      "energy": -107.59690653047801,
+      "subspace_dim": 385,
+      "n_sampled": 1489,
+      "n_valid": 321,
+      "extra": {
+        "N": 50,
+        "depth": 325,
+        "two_qubit_depth": 250,
+        "total_gates": 574,
+        "rotation_gates": 50
+      }
+    }
+  ],
+  "lucj3_compactness": [
+    {
+      "x": 1000,
+      "energy": -107.55785966703132,
+      "subspace_dim": 11,
+      "n_sampled": 6,
+      "n_valid": 6,
+      "extra": {}
+    }
+  ],
+  "sqdrift_compactness": [
+    {
+      "x": 1000,
+      "energy": -107.59074084364013,
+      "subspace_dim": 256,
+      "n_sampled": 438,
+      "n_valid": 115,
+      "extra": {
+        "per_realization_shots": 166,
+        "n_realizations": 6
+      }
+    }
+  ],
+  "exact_compactness": [
+    {
+      "x": 1000,
+      "energy": -107.63610520380485,
+      "subspace_dim": 72,
+      "n_sampled": 35,
+      "n_valid": 35,
+      "extra": {}
+    }
+  ]
+}

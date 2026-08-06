@@ -1,0 +1,80 @@
+model:
+  _target_: gqe_qsci.gqe.models.gpt2.GPT2Model
+  small: true
+  repetition_penalty: 1.2
+molecule:
+  _target_: gqe_qsci.molecule.PySCFMolecule
+  geometry:
+    type: linear_chain
+    atoms:
+    - 'N'
+    - 'N'
+    bond_length: 2.5
+  basis: sto-3g
+  nelecas: 10
+  norbcas: 8
+  spin: 0
+  charge: 0
+trainer:
+  seed: 32
+  max_iters: 100
+  num_samples: 10
+  batch_size: 10
+  step_per_epoch: 15
+  warmup_size: 10
+  buffer_size: 10
+  load_checkpoint: true
+  checkpoint_every_n_iters: 10
+  optimizer:
+    lr: 5.0e-06
+    cls: AdamW
+    weight_decay: 0.01
+  loss:
+    type: grpo
+    clip_grpo_low: 0.2
+    clip_grpo_high: 0.28
+  temperature_scheduler:
+    _target_: gqe_qsci.gqe.scheduler.VarBasedScheduler
+    initial: 0.5
+    delta: 0.02
+    target_var: 1.0e-05
+skqd:
+  krylov_dim: 2
+  dt: 0.1
+  trotter_steps: 2
+  shots_per_krylov_state: 1000
+  max_dim: 2000
+  max_cycle: 100
+  eigsh_kwargs:
+    tol: 1.0e-06
+    maxiter: 1000
+project:
+  name: gqe-for-qsci
+exp_tag: circuittest
+output: outputs/${project.name}/${exp_tag}
+wandb:
+  project: ${project.name}
+  name: ${exp_tag}
+  dir: ${output}
+ngates: 10
+reference_keys:
+- R-CASCI
+- R-CCSD
+subspace_method: skqd
+sampler:
+  mpi: false
+  shots: 20000
+operator_pool:
+  spec: pauli_evolution
+  params: null
+  ccsd_threshold: 1.0e-06
+  remove_z_ladder: true
+  only_use_first_pauli: true
+qsci:
+  max_dim: 1000
+  enlarge_method: symmetry_completion
+  max_cycle: 100
+  eigsh_kwargs:
+    tol: 1.0e-06
+    maxiter: 1000
+vocab_size: 0

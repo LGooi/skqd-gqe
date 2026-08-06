@@ -1,0 +1,51 @@
+{
+  "os": "Linux-4.18.0-305.131.1.el8_4.x86_64-x86_64-with-glibc2.35",
+  "python": "CPython 3.10.20",
+  "startedAt": "2026-07-24T08:10:05.866499Z",
+  "args": [
+    "exp_tag=circuit_test",
+    "subspace_method=skqd"
+  ],
+  "program": "/home/leo07010/Leon/gqe-for-qsci/train.py",
+  "codePath": "train.py",
+  "codePathLocal": "train.py",
+  "git": {
+    "remote": "https://github.com/moken20/gqe-for-qsci.git",
+    "commit": "0a201eafb94a85dc49b9dbfe33338087efe1e969"
+  },
+  "email": "leongzl0269@gmail.com",
+  "root": "outputs/gqe-for-qsci/circuit_test",
+  "host": "cjna7nctr1779779307790-74jts",
+  "executable": "/home/leo07010/miniconda3/envs/gqe-env/bin/python",
+  "cpu_count": 36,
+  "cpu_count_logical": 36,
+  "gpu": "Tesla V100-SXM2-32GB",
+  "gpu_count": 2,
+  "disk": {
+    "/": {
+      "total": "107374182400",
+      "used": "9287421952"
+    }
+  },
+  "memory": {
+    "total": "809928179712"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "Tesla V100-SXM2-32GB",
+      "memoryTotal": "34359738368",
+      "cudaCores": 5120,
+      "architecture": "Volta",
+      "uuid": "GPU-73f36790-78f4-df2b-c973-57a4edfbf773"
+    },
+    {
+      "name": "Tesla V100-SXM2-32GB",
+      "memoryTotal": "34359738368",
+      "cudaCores": 5120,
+      "architecture": "Volta",
+      "uuid": "GPU-a3291a4a-4674-9c44-27a1-e6a9dd65b32f"
+    }
+  ],
+  "cudaVersion": "12.2",
+  "writerId": "43buskddl1qczn6z1vwizzr8a65ntelq"
+}

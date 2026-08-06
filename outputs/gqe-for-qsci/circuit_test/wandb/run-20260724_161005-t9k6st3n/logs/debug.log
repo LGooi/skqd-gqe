@@ -1,0 +1,25 @@
+2026-07-24 16:10:05,898 INFO    MainThread:869575 [wandb_setup.py:_flush():81] Current SDK version is 0.28.0
+2026-07-24 16:10:05,898 INFO    MainThread:869575 [wandb_setup.py:_flush():81] Configure stats pid to 869575
+2026-07-24 16:10:05,900 INFO    MainThread:869575 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-07-24 16:10:05,902 INFO    MainThread:869575 [wandb_init.py:setup_run_log_directory():725] Logging user logs to outputs/gqe-for-qsci/circuit_test/wandb/run-20260724_161005-t9k6st3n/logs/debug.log
+2026-07-24 16:10:05,903 INFO    MainThread:869575 [wandb_init.py:setup_run_log_directory():726] Logging internal logs to outputs/gqe-for-qsci/circuit_test/wandb/run-20260724_161005-t9k6st3n/logs/debug-internal.log
+2026-07-24 16:10:05,904 INFO    MainThread:869575 [wandb_init.py:init():768] calling init triggers
+2026-07-24 16:10:05,905 INFO    MainThread:869575 [wandb_init.py:init():773] wandb.init called with sweep_config: {}
+config: {'model': {'_target_': 'gqe_qsci.gqe.models.gpt2.GPT2Model', 'small': True, 'repetition_penalty': 1.2}, 'molecule': {'_target_': 'gqe_qsci.molecule.PySCFMolecule', 'geometry': {'type': 'linear_chain', 'atoms': ['N', 'N'], 'bond_length': 2.5}, 'basis': 'sto-3g', 'nelecas': 10, 'norbcas': 8, 'spin': 0, 'charge': 0}, 'trainer': {'seed': 32, 'max_iters': 100, 'num_samples': 10, 'batch_size': 10, 'step_per_epoch': 15, 'warmup_size': 10, 'buffer_size': 10, 'load_checkpoint': True, 'checkpoint_every_n_iters': 10, 'optimizer': {'lr': 5e-06, 'cls': 'AdamW', 'weight_decay': 0.01}, 'loss': {'type': 'grpo', 'clip_grpo_low': 0.2, 'clip_grpo_high': 0.28}, 'temperature_scheduler': {'_target_': 'gqe_qsci.gqe.scheduler.VarBasedScheduler', 'initial': 0.5, 'delta': 0.02, 'target_var': 1e-05}}, 'skqd': {'krylov_dim': 2, 'dt': 0.1, 'trotter_steps': 2, 'shots_per_krylov_state': 1000, 'max_dim': 2000, 'max_cycle': 100, 'eigsh_kwargs': {'tol': 1e-06, 'maxiter': 1000}}, 'project': {'name': 'gqe-for-qsci'}, 'exp_tag': 'circuit_test', 'output': 'outputs/gqe-for-qsci/circuit_test', 'wandb': {'project': 'gqe-for-qsci', 'name': 'circuit_test', 'dir': 'outputs/gqe-for-qsci/circuit_test'}, 'ngates': 10, 'reference_keys': ['R-CASCI', 'R-CCSD'], 'subspace_method': 'skqd', 'sampler': {'mpi': False, 'shots': 20000}, 'operator_pool': {'spec': 'pauli_evolution', 'params': None, 'ccsd_threshold': 1e-06, 'remove_z_ladder': True, 'only_use_first_pauli': True}, 'qsci': {'max_dim': 1000, 'enlarge_method': 'symmetry_completion', 'max_cycle': 100, 'eigsh_kwargs': {'tol': 1e-06, 'maxiter': 1000}}, 'vocab_size': 0, '_wandb': {}}
+2026-07-24 16:10:05,906 INFO    MainThread:869575 [wandb_init.py:init():816] starting backend
+2026-07-24 16:10:05,907 INFO    MainThread:869575 [wandb_init.py:init():831] sending inform_init request
+2026-07-24 16:10:06,380 INFO    MainThread:869575 [wandb_init.py:init():836] backend started and connected
+2026-07-24 16:10:06,382 INFO    MainThread:869575 [wandb_init.py:init():906] updated telemetry
+2026-07-24 16:10:06,398 INFO    MainThread:869575 [wandb_init.py:init():929] communicating run to backend with 300.0 second timeout
+2026-07-24 16:10:08,152 INFO    MainThread:869575 [wandb_init.py:init():974] starting run threads in backend
+2026-07-24 16:10:08,384 INFO    MainThread:869575 [wandb_run.py:_console_start():2523] atexit reg
+2026-07-24 16:10:08,384 INFO    MainThread:869575 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-07-24 16:10:08,384 INFO    MainThread:869575 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-07-24 16:10:08,385 INFO    MainThread:869575 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-07-24 16:10:08,394 INFO    MainThread:869575 [wandb_init.py:init():1012] run started, returning control to user process
+2026-07-24 19:51:38,178 INFO    wandb-AsyncioManager-main:869575 [service_client.py:_forward_responses():122] [no run ID] Reached EOF.
+2026-07-24 19:51:38,179 INFO    wandb-AsyncioManager-main:869575 [mailbox.py:close():154] [no run ID] Closing mailbox, abandoning 2 handles.
+2026-07-24 19:51:38,179 ERROR   wandb-AsyncioManager-main:869575 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+wandb.sdk.mailbox.mailbox_handle.HandleAbandonedError
+2026-07-24 19:51:50,518 ERROR   wandb-AsyncioManager-main:869575 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+wandb.sdk.mailbox.mailbox.MailboxClosedError

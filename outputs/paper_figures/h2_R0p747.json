@@ -1,0 +1,256 @@
+{
+  "R": 0.7474,
+  "casci_energy": -1.1371757102406854,
+  "lucj3_sampling": [
+    {
+      "x": 500,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {}
+    },
+    {
+      "x": 2000,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {}
+    }
+  ],
+  "sqdrift_sampling": [
+    {
+      "x": 500,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {
+        "per_realization_shots": 166,
+        "n_realizations": 3
+      }
+    },
+    {
+      "x": 2000,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {
+        "per_realization_shots": 666,
+        "n_realizations": 3
+      }
+    }
+  ],
+  "exact_sampling": [
+    {
+      "x": 500,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {}
+    },
+    {
+      "x": 2000,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {}
+    }
+  ],
+  "lucj_gate_efficiency": [
+    {
+      "x": 16,
+      "energy": -1.116325564486115,
+      "subspace_dim": 1,
+      "n_sampled": 1,
+      "n_valid": 1,
+      "extra": {
+        "layers": 1,
+        "depth": 30,
+        "two_qubit_depth": 8,
+        "total_gates": 86,
+        "rotation_gates": 60
+      }
+    },
+    {
+      "x": 32,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {
+        "layers": 2,
+        "depth": 58,
+        "two_qubit_depth": 16,
+        "total_gates": 170,
+        "rotation_gates": 120
+      }
+    }
+  ],
+  "sqdrift_gate_efficiency": [
+    {
+      "x": 8,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {
+        "N": 5,
+        "depth": 17,
+        "two_qubit_depth": 8,
+        "total_gates": 27,
+        "rotation_gates": 5
+      }
+    },
+    {
+      "x": 10,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {
+        "N": 10,
+        "depth": 13,
+        "two_qubit_depth": 6,
+        "total_gates": 22,
+        "rotation_gates": 10
+      }
+    }
+  ],
+  "gqe_skqd_sampling": [
+    {
+      "x": 500,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {
+        "cx_count": 18,
+        "per_krylov_shots": 250,
+        "krylov_dim": 2,
+        "L": 3
+      }
+    },
+    {
+      "x": 2000,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {
+        "cx_count": 18,
+        "per_krylov_shots": 1000,
+        "krylov_dim": 2,
+        "L": 3
+      }
+    }
+  ],
+  "gqe_skqd_gate": [
+    {
+      "x": 18,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {
+        "L": 3,
+        "krylov_dim": 2,
+        "shots": 2000,
+        "per_krylov_shots": 1000,
+        "total_gates": 51
+      }
+    }
+  ],
+  "lucj3_compactness": [
+    {
+      "x": 500,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {}
+    },
+    {
+      "x": 2000,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {}
+    }
+  ],
+  "sqdrift_compactness": [
+    {
+      "x": 500,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {
+        "per_realization_shots": 166,
+        "n_realizations": 3
+      }
+    },
+    {
+      "x": 2000,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {
+        "per_realization_shots": 666,
+        "n_realizations": 3
+      }
+    }
+  ],
+  "exact_compactness": [
+    {
+      "x": 500,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {}
+    },
+    {
+      "x": 2000,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {}
+    }
+  ],
+  "gqe_skqd_compactness": [
+    {
+      "x": 500,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {
+        "cx_count": 18,
+        "per_krylov_shots": 250,
+        "krylov_dim": 2,
+        "L": 3
+      }
+    },
+    {
+      "x": 2000,
+      "energy": -1.1371757102406854,
+      "subspace_dim": 2,
+      "n_sampled": 2,
+      "n_valid": 2,
+      "extra": {
+        "cx_count": 18,
+        "per_krylov_shots": 1000,
+        "krylov_dim": 2,
+        "L": 3
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+2026-07-25 09:45:24,766 INFO    MainThread:888783 [wandb_setup.py:_flush():81] Current SDK version is 0.28.0
+2026-07-25 09:45:24,766 INFO    MainThread:888783 [wandb_setup.py:_flush():81] Configure stats pid to 888783
+2026-07-25 09:45:24,767 INFO    MainThread:888783 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-07-25 09:45:24,768 INFO    MainThread:888783 [wandb_init.py:setup_run_log_directory():725] Logging user logs to outputs/gqe-for-qsci/circuittest/wandb/run-20260725_094524-l7btsa06/logs/debug.log
+2026-07-25 09:45:24,769 INFO    MainThread:888783 [wandb_init.py:setup_run_log_directory():726] Logging internal logs to outputs/gqe-for-qsci/circuittest/wandb/run-20260725_094524-l7btsa06/logs/debug-internal.log
+2026-07-25 09:45:24,771 INFO    MainThread:888783 [wandb_init.py:init():768] calling init triggers
+2026-07-25 09:45:24,772 INFO    MainThread:888783 [wandb_init.py:init():773] wandb.init called with sweep_config: {}
+config: {'model': {'_target_': 'gqe_qsci.gqe.models.gpt2.GPT2Model', 'small': True, 'repetition_penalty': 1.2}, 'molecule': {'_target_': 'gqe_qsci.molecule.PySCFMolecule', 'geometry': {'type': 'linear_chain', 'atoms': ['N', 'N'], 'bond_length': 2.5}, 'basis': 'sto-3g', 'nelecas': 10, 'norbcas': 8, 'spin': 0, 'charge': 0}, 'trainer': {'seed': 32, 'max_iters': 100, 'num_samples': 10, 'batch_size': 10, 'step_per_epoch': 15, 'warmup_size': 10, 'buffer_size': 10, 'load_checkpoint': True, 'checkpoint_every_n_iters': 10, 'optimizer': {'lr': 5e-06, 'cls': 'AdamW', 'weight_decay': 0.01}, 'loss': {'type': 'grpo', 'clip_grpo_low': 0.2, 'clip_grpo_high': 0.28}, 'temperature_scheduler': {'_target_': 'gqe_qsci.gqe.scheduler.VarBasedScheduler', 'initial': 0.5, 'delta': 0.02, 'target_var': 1e-05}}, 'skqd': {'krylov_dim': 2, 'dt': 0.1, 'trotter_steps': 2, 'shots_per_krylov_state': 1000, 'max_dim': 2000, 'max_cycle': 100, 'eigsh_kwargs': {'tol': 1e-06, 'maxiter': 1000}}, 'project': {'name': 'gqe-for-qsci'}, 'exp_tag': 'circuittest', 'output': 'outputs/gqe-for-qsci/circuittest', 'wandb': {'project': 'gqe-for-qsci', 'name': 'circuittest', 'dir': 'outputs/gqe-for-qsci/circuittest'}, 'ngates': 10, 'reference_keys': ['R-CASCI', 'R-CCSD'], 'subspace_method': 'skqd', 'sampler': {'mpi': False, 'shots': 20000}, 'operator_pool': {'spec': 'pauli_evolution', 'params': None, 'ccsd_threshold': 1e-06, 'remove_z_ladder': True, 'only_use_first_pauli': True}, 'qsci': {'max_dim': 1000, 'enlarge_method': 'symmetry_completion', 'max_cycle': 100, 'eigsh_kwargs': {'tol': 1e-06, 'maxiter': 1000}}, 'vocab_size': 0, '_wandb': {}}
+2026-07-25 09:45:24,773 INFO    MainThread:888783 [wandb_init.py:init():816] starting backend
+2026-07-25 09:45:24,775 INFO    MainThread:888783 [wandb_init.py:init():831] sending inform_init request
+2026-07-25 09:45:25,231 INFO    MainThread:888783 [wandb_init.py:init():836] backend started and connected
+2026-07-25 09:45:25,233 INFO    MainThread:888783 [wandb_init.py:init():906] updated telemetry
+2026-07-25 09:45:25,248 INFO    MainThread:888783 [wandb_init.py:init():929] communicating run to backend with 300.0 second timeout
+2026-07-25 09:45:25,912 INFO    MainThread:888783 [wandb_init.py:init():974] starting run threads in backend
+2026-07-25 09:45:26,133 INFO    MainThread:888783 [wandb_run.py:_console_start():2523] atexit reg
+2026-07-25 09:45:26,133 INFO    MainThread:888783 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-07-25 09:45:26,134 INFO    MainThread:888783 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-07-25 09:45:26,135 INFO    MainThread:888783 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-07-25 09:45:26,141 INFO    MainThread:888783 [wandb_init.py:init():1012] run started, returning control to user process
