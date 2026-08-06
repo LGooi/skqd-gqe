@@ -1,0 +1,1 @@
+To run gqe-qsci or gqe-skqd algorithm, just change the subspace_method to either qsci or skqd using the syntax below: python train.py molecule=n2 trainer.epochs=200  To obtain figures go into scripts and run paper_figures.py  Outputs are found in outputs/paper_figrues
